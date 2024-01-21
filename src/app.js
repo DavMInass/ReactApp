@@ -4,7 +4,7 @@ import Users from "./components/users"
 import Adduser from "./components/Adduser";
 import axios from 'axios';
 
-const baseUrl = "https://reqres.in/api/users?page=1"
+const baseUrl1 = "https://reqres.in/api/users?page=1"
 
 
 
@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
 
-    axios.get(baseUrl).then((res) => {
+    axios.get(baseUrl1).then((res) => {
       this.setState({users: res.data.data});
     })
 
