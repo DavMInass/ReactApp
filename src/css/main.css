@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+
+.user p {
+    font-weight: 600;
+}
+
+body {
+    color: rgb(54, 58, 62);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;  
+    background-color: #f8f8f8;
+}
+
+
+
+.header {
+    padding: 25px 100px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #dd5353;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+/* form{
+    position: absolute;
+    top: 150px;
+    margin-right: 150px;
+} */
+
+.aside{
+    margin-left: 65%;
+}
+
+.main{
+    margin-left: 100px;
+    width: 60%;
+}
+
+.user{
+    width: 20%;
+    height: 100px;
+    padding: 40px 20px;
+    border-radius: 18px;
+    float: left;
+    margin-top: 50px;
+}
+
+.prof{
+    color: #dd5353;
+}
+
+.delete-icon{
+     float: right;
+     cursor: pointer;
+     transform: scale(2);
+     transition: 0.5s ease-in-out;
+}
+
+.edit-icon {
+    float: right;
+    cursor: pointer;
+    transform: scale(2);
+    transition: 0.5s ease-in-out;
+    margin-right: 25px;
+}
+
+
+.edit-icon:hover,
+.delete-icon:hover{
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+
+form input, form textarea, form button{
+    width: 90%;
+    padding: 15px 5%;
+    font-family: 'Monsterrat';
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: #222;
+    color: fff;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+form button{
+    transition: 0.5s ease-in-out;
+}
+
+form button:hover {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.user form{
+     margin-top: 20px;
+}
+
+.user form input,
+.user form textarea,
+.user form button{
+    background-color: #858282;
+}
+
+
+.controlPanel{
+    position: absolute;
+    margin-top: 60px;
+    width: 20%;
+}
