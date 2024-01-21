@@ -25,10 +25,9 @@ class User extends React.Component {
                 }/>
                 <h3>{this.user.first_name} {this.user.last_name}</h3>
                 <br></br>
-                <img src={this.user.avatar} />
+                <img className="photo" src={this.user.avatar} />
                 <p className="prof">{this.user.email}</p>
                 <br></br>
-                <p className="bio">{this.user.bio}</p>
                 <br></br>
                 {this.state.editForm  && <Adduser user={this.user}  onAdd={this.props.onEdit}/> }
             </div>

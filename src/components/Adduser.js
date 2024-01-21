@@ -7,23 +7,23 @@ class Adduser extends React.Component {
         this.state = {
             first_name: "",
             last_name: "",
-            bio: "",
-            prof: ""
+            avatar: "",
+            email: ""
         }
     }
     render() {
         return (<form ref={(el) => this.myForm = el} className="controlPanel">
             <input placeholder="Name" onChange={(e) => this.setState({ first_name: e.target.value })} />
             <input placeholder="Surname" onChange={(el) => this.setState({ last_name: el.target.value })} />
-            <textarea placeholder="Bio" onChange={(e) => this.setState({ bio: e.target.value })} />
-            <input placeholder="Prof" onChange={(e) => this.setState({ prof: e.target.value })} />
+            <textarea placeholder="Avatar" onChange={(e) => this.setState({ avatar: e.target.value })} />
+            <input placeholder="e-mail" onChange={(e) => this.setState({ email: e.target.value })} />
             <button type="button" onClick={() => {
                 this.myForm.reset();
                 this.userAdd  = {
                     first_name: this.state.first_name,
                     last_name: this.state.last_name,
-                    bio: this.state.email,
-                    prof: this.state.prof
+                    avatar: this.state.avatar,
+                    email: this.state.email
                 }
                 if(this.props.user){
                     this.userAdd.id = this.props.user.id

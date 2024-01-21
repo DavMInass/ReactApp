@@ -15,7 +15,7 @@ body {
     color: rgb(54, 58, 62);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;  
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 
@@ -39,14 +39,14 @@ body {
 
 .aside{
     margin-left: 65%;
-}
+}   
 
-.main{
+.main,.noUser{
     margin-left: 100px;
     width: 60%;
 }
 
-.user{
+.user,.noUser{
     width: 20%;
     height: 100px;
     padding: 40px 20px;
@@ -120,4 +120,14 @@ form button:hover {
     position: absolute;
     margin-top: 60px;
     width: 20%;
+}
+
+
+.photo{
+    width: 50%;
+    border-radius: 18px;
+}
+
+.noUser{
+    position: absolute;
 }

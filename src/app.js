@@ -41,7 +41,7 @@ class App extends React.Component {
 
   deleteUser(id) {
     this.setState({
-      users: this.state.users.filter(el => el.id !== id) 
+      users: this.state.users.filter(user => user.id !== id) 
     })
   }
 
